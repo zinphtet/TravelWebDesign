@@ -1,0 +1,15 @@
+{
+  "name": "travel-website",
+  "version": "1.0.0",
+  "description": "- Travel website to the most beautiful beaches, using HTML, CSS & JAVASCRIPT. - Contains animations when scrolling. - Includes a dark and light mode. - Developed first with the Mobile First methodology, then for desktop. - Compatible with all mobile devices and with a beautiful and pleasant user interface.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile-sass": "sass ./assets/scss/main.scss ./assets/css/style.css -w"
+  },
+  "author": "zph",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.52.1"
+  }
+}

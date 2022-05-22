@@ -1,0 +1,64 @@
+$primary : #144e5a;
+$primary-dark : #0f3c46;
+$primary_light_text : #257b8d;
+
+
+$white : #fff;
+$black : #100e0e;
+$gray : #615757;
+$navbar-height : 10vh;
+
+$small : 21.875rem;
+$phone : 37.5rem;
+$tablet-port : 56.25rem;
+$tablet-land : 75rem;
+$inner_width : 62.5rem;
+$big-screen : 112.5rem;
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+li{
+    list-style-type: none;
+}
+a{
+    text-decoration: none;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.7;
+    font-family: 'Open Sans', sans-serif;
+    overflow-x: hidden;
+
+    @media screen and (max-width : $tablet-land){
+        font-size: 56.25%;
+    }
+    @media screen and (max-width : $tablet-port){
+        font-size: 50%;
+    }
+    @media screen and (max-width : $small){
+        font-size: 43.75%;
+    }
+    
+}
+
+.container{
+    max-width: 110rem;
+}
+.btn_primary{
+    padding: 2rem 4rem ;
+    border: none;
+    background-color: $primary;
+    color: $white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    transition: background-color .3s;
+    &:hover{
+        background-color: $primary-dark;
+    }
+}
+
+
