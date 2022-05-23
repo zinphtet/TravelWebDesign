@@ -23,3 +23,36 @@ window.addEventListener('scroll', function () {
 		nav.classList.remove('sticky');
 	}
 });
+
+//swiper
+
+let swiper = new Swiper('.swiper-container', {
+	effect: 'coverflow',
+	grabCursor: true,
+	centeredSlides: true,
+	slidesPerView: 'auto',
+	loop: true,
+	spaceBetween: 32,
+	coverflowEffect: {
+		rotate: 0,
+	},
+});
+
+// Control Video
+
+const video = selectDom('.tour_video');
+const videoControlBtn = selectDom('.video_control');
+
+videoControlBtn.addEventListener('click', function () {
+	if (this.classList.contains('ri-pause-line')) {
+		video.pause();
+		this.classList = 'video_control ri-play-line';
+		return;
+	}
+	video.play();
+	this.classList = 'video_control ri-pause-line';
+});
+
+video.addEventListener('ended', function () {
+	videoControlBtn.classList = 'video_control ri-play-line';
+});

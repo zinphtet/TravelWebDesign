@@ -6,8 +6,16 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="shortcut icon" href="assets/img/favicon.png" type="image/png" />
 		<link
+			href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500&display=swap"
+			rel="stylesheet"
+		/>
+		<link
 			href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap"
 			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://unpkg.com/swiper@8/swiper-bundle.min.css"
 		/>
 		<link
 			href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css"
@@ -16,7 +24,7 @@
 		<link rel="stylesheet" href="./assets/css/style.css" />
 		<title>Travel WebDesign</title>
 	</head>
-	<body>
+	<body class="dark">
 		<!-- <nav class="nav_bar">
 			<div class="inner_nav">
 				<a href="#" class="nav_brand nav_brand_text">Gulliver</a>
@@ -104,8 +112,174 @@
 				</div>
 			</div>
 		</section>
+		<section id="discover">
+			<p class="section_title">
+				Discover The Most <br />
+				Attractive Places
+			</p>
+			<div class="swiperContainer container swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper_img swiper_img_1 swiper-slide">
+						<img src="./assets/img/discover1.jpg" alt="" />
+						<div class="info">
+							<p class="city">Bali</p>
+							<p class="tours">24 tours available</p>
+						</div>
+					</div>
+					<div class="swiper_img swiper_img_2 swiper-slide">
+						<img src="./assets/img/discover2.jpg" alt="" />
+						<div class="info">
+							<p class="city">Hawaii</p>
+							<p class="tours">15 tours available</p>
+						</div>
+					</div>
+					<div class="swiper_img swiper_img_3 swiper-slide">
+						<img src="./assets/img/discover3.jpg" alt="" />
+						<div class="info">
+							<p class="city">Hvar</p>
+							<p class="tours">18 tours available</p>
+						</div>
+					</div>
+					<div class="swiper_img swiper_img_4 swiper-slide">
+						<img src="./assets/img/discover4.jpg" alt="" />
+						<div class="info">
+							<p class="city">Whiteheaven</p>
+							<p class="tours">32 tours available</p>
+						</div>
+					</div>
+				</div>
+			</div>
 
+			<div class="experience">
+				<p class="section_title">
+					With Our Experience <br />
+					We Will Serve You
+				</p>
+				<div class="experience_info">
+					<div class="year_info">
+						<h5 class="year">20+</h5>
+						<p>
+							Year <br />
+							Experience
+						</p>
+					</div>
+					<div class="tour_info">
+						<h5 class="tour">75+</h5>
+						<p>
+							Tours <br />
+							completed
+						</p>
+					</div>
+					<div class="year_info">
+						<h5 class="year">1500+</h5>
+						<p>
+							Tourist <br />
+							Destination
+						</p>
+					</div>
+				</div>
+			</div>
+			<div class="experience_imgs">
+				<div class="experience_img_1">
+					<img src="./assets/img/experience1.jpg" alt="" />
+				</div>
+				<div class="experience_img_2">
+					<img src="./assets/img/experience2.jpg" alt="" />
+				</div>
+			</div>
+			<div class="video_tour">
+				<p class="section_title">Video Tour</p>
+				<p class="para">
+					Find out more with our video of the most beautiful and pleasant places
+					for you and your family.
+				</p>
+				<div class="video">
+					<video src="./assets/video/video.mp4" class="tour_video"></video>
+					<!-- <div class="video_control"> -->
+					<i class="ri-play-line video_control"></i>
+					<!-- </div> -->
+				</div>
+			</div>
+		</section>
+		<section id="place">
+			<p class="section_title">Choose Your Place</p>
+			<div class="places">
+				<div class="place_div">
+					<img src="./assets/img/place1.jpg" alt="Your favourite place" />
+					<div class="star">
+						<i class="ri-star-s-line"></i><span class="rating">4.8</span>
+					</div>
+					<div class="location">
+						Bali
+						<span>Indonesia</span>
+						<p class="price">$299</p>
+					</div>
+					<button class="place_btn">
+						<i class="ri-arrow-right-line"></i>
+					</button>
+				</div>
+				<div class="place_div">
+					<img src="./assets/img/home2.jpg" alt="Your favourite place" />
+					<div class="star">
+						<i class="ri-star-s-line"></i><span class="rating">4.9</span>
+					</div>
+					<div class="location">
+						Bora Bora
+						<span>Polinesia</span>
+						<p class="price">$5,099</p>
+					</div>
+					<button class="place_btn">
+						<i class="ri-arrow-right-line"></i>
+					</button>
+				</div>
+				<div class="place_div">
+					<img src="./assets/img/place3.jpg" alt="Your favourite place" />
+					<div class="star">
+						<i class="ri-star-s-line"></i><span class="rating">4.3</span>
+					</div>
+					<div class="location">
+						Hawaii
+						<span>island</span>
+						<p class="price">$1,299</p>
+					</div>
+					<button class="place_btn">
+						<i class="ri-arrow-right-line"></i>
+					</button>
+				</div>
+				<div class="place_div">
+					<img src="./assets/img/place4.jpg" alt="Your favourite place" />
+					<div class="star">
+						<i class="ri-star-s-line"></i><span class="rating">4.7</span>
+					</div>
+					<div class="location">
+						White heaven
+						<span>Australia</span>
+						<p class="price">$3,215</p>
+					</div>
+					<button class="place_btn">
+						<i class="ri-arrow-right-line"></i>
+					</button>
+				</div>
+				<div class="place_div">
+					<img src="./assets/img/place5.jpg" alt="Your favourite place" />
+					<div class="star">
+						<i class="ri-star-s-line"></i><span class="rating">4.9</span>
+					</div>
+					<div class="location">
+						Hvar
+						<span>Croatia</span>
+						<p class="price">$2,100</p>
+					</div>
+					<button class="place_btn">
+						<i class="ri-arrow-right-line"></i>
+					</button>
+				</div>
+			</div>
+		</section>
+		<section id="next">Next Section</section>
 		<!-- //script tag -->
+		<script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+		<script src="./assets/js/swiper.js"></script>
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>

@@ -1,18 +1,33 @@
 
 .nav_brand_text{
     font-size:3rem ;
-    color: $white;
+    color: var(--white);
     font-weight: 400;
 }
 .section_title{
+    font-family: 'Raleway', sans-serif;
     font-size: 3rem;
     line-height: 1.4;
     font-weight: 600;
-    color: $primary;
+    color: var(--primary);
     // letter-spacing: .1rem;
+
+    // @media screen and (max-width : $tablet-land){
+    //     color: green;
+    // }
+    // @media screen and (max-width : $tablet-port){
+    //     color: blue;
+    // }
+    // @media screen and (max-width : $phone){
+    //     color: red;
+    // }
+    // @media screen and (max-width : $small){
+    //     color: #ed13a4;
+    //     // font-size: 5rem;
+    // }
 }
 .para{
-    font-size: 1.7rem;
-    color: $primary_light_text;
-    line-height: 1.4;
+    font-size: 1.8rem;
+    color: var(--primary_light_text);
+    line-height: 1.2;
  }

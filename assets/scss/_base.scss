@@ -1,13 +1,30 @@
-$primary : #144e5a;
-$primary-dark : #0f3c46;
-$primary_light_text : #257b8d;
 
 
-$white : #fff;
-$black : #100e0e;
-$gray : #615757;
+    // $primary : #144e5a;
+    // $primary-dark : #0f3c46;
+    // $primary_light_text : #257b8d;
+    
+    
+    // $white : #fff;
+    // $black : #100e0e;
+    // $gray : #615757;
+
+    :root{
+       --primary : #144e5a;
+       --primary-dark : #0f3c46;
+       --primary_light_text : #257b8d;
+        
+        
+      --white : #fff;
+      --black : #100e0e;
+      --gray : #615757;
+    }
+
+  
+
+    
+    
 $navbar-height : 10vh;
-
 $small : 21.875rem;
 $phone : 37.5rem;
 $tablet-port : 56.25rem;
@@ -51,14 +68,23 @@ html{
 .btn_primary{
     padding: 2rem 4rem ;
     border: none;
-    background-color: $primary;
-    color: $white;
+    background-color:var(--primary);
+    color: var(--white);
     font-size: 1.5rem;
     cursor: pointer;
     transition: background-color .3s;
     &:hover{
-        background-color: $primary-dark;
+        background-color: var(--primary-dark);
     }
 }
 
 
+
+#next{
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 5rem;
+}

@@ -1,3 +1,12 @@
+:root {
+  --primary: #144e5a;
+  --primary-dark: #0f3c46;
+  --primary_light_text: #257b8d;
+  --white: #fff;
+  --black: #100e0e;
+  --gray: #615757;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -41,33 +50,43 @@ html {
 .btn_primary {
   padding: 2rem 4rem;
   border: none;
-  background-color: #144e5a;
-  color: #fff;
+  background-color: var(--primary);
+  color: var(--white);
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .btn_primary:hover {
-  background-color: #0f3c46;
+  background-color: var(--primary-dark);
+}
+
+#next {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5rem;
 }
 
 .nav_brand_text {
   font-size: 3rem;
-  color: #fff;
+  color: var(--white);
   font-weight: 400;
 }
 
 .section_title {
+  font-family: "Raleway", sans-serif;
   font-size: 3rem;
   line-height: 1.4;
   font-weight: 600;
-  color: #144e5a;
+  color: var(--primary);
 }
 
 .para {
-  font-size: 1.7rem;
-  color: #257b8d;
-  line-height: 1.4;
+  font-size: 1.8rem;
+  color: var(--primary_light_text);
+  line-height: 1.2;
 }
 
 body {
@@ -102,7 +121,7 @@ body {
   #header nav .inner_nav .square_icon {
     display: block;
     font-size: 3rem;
-    color: #fff;
+    color: var(--white);
   }
 }
 #header nav .inner_nav .nav_brand {
@@ -131,7 +150,7 @@ body {
     padding: 5rem;
     align-items: flex-start;
     justify-content: flex-start;
-    background-color: #fff;
+    background-color: var(--white);
     transition: right 0.5s;
   }
 }
@@ -139,21 +158,21 @@ body {
   font-size: 2rem;
   margin: 1rem 3rem;
   border: 2px solid transparent;
-  color: #fff;
+  color: var(--white);
 }
 @media screen and (max-width: 56.25rem) {
   #header nav .inner_nav .nav_links .nav_link {
     margin-bottom: 3rem;
     font-size: 2.5rem;
-    color: #100e0e;
+    color: var(--black);
   }
 }
 #header nav .inner_nav .nav_links .nav_link:hover {
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid var(--white);
 }
 @media screen and (max-width: 56.25rem) {
   #header nav .inner_nav .nav_links .nav_link:hover {
-    border-bottom: 2px solid #144e5a;
+    border-bottom: 2px solid var(--primary);
   }
 }
 #header nav .inner_nav .nav_links .nav_link a {
@@ -165,7 +184,7 @@ body {
 @media screen and (max-width: 56.25rem) {
   #header nav .inner_nav .nav_links .light_dark .mode_text {
     display: inline;
-    color: #144e5a;
+    color: var(--primary);
     font-size: 2rem;
     margin: 5rem 2rem 0rem 3rem;
   }
@@ -173,11 +192,11 @@ body {
 #header nav .inner_nav .nav_links .light_dark i {
   font-size: 2rem;
   cursor: pointer;
-  color: #fff;
+  color: var(--white);
 }
 @media screen and (max-width: 56.25rem) {
   #header nav .inner_nav .nav_links .light_dark i {
-    color: #144e5a;
+    color: var(--primary);
   }
 }
 #header nav .inner_nav .nav_links.show {
@@ -190,7 +209,7 @@ body {
   #header nav .inner_nav .close {
     display: block;
     font-size: 4rem;
-    color: #100e0e;
+    color: var(--black);
     position: absolute;
     top: 1rem;
     right: 2rem;
@@ -203,19 +222,19 @@ body {
   top: 0;
   left: 0;
   z-index: 50;
-  background-color: #fff;
+  background-color: var(--white);
 }
 #header nav.sticky .inner_nav .square_icon {
-  color: #144e5a;
+  color: var(--primary);
 }
 #header nav.sticky .inner_nav .nav_brand {
-  color: #144e5a;
+  color: var(--primary);
 }
 #header nav.sticky .inner_nav .nav_links .nav_link {
-  color: #144e5a;
+  color: var(--primary);
 }
 #header nav.sticky .inner_nav .nav_links .light_dark i {
-  color: #144e5a;
+  color: var(--primary);
 }
 #header .explore {
   margin: 0 auto;
@@ -229,13 +248,13 @@ body {
 #header .explore .discover {
   font-size: 2rem;
   font-weight: 600;
-  color: #fff;
+  color: var(--white);
 }
 #header .explore_title {
   font-size: 6rem;
   line-height: 1.1;
   margin-bottom: 5rem;
-  color: #fff;
+  color: var(--white);
 }
 @media screen and (max-width: 21.875rem) {
   #header .explore_title {
@@ -257,7 +276,7 @@ body {
 }
 #header .explore .social i {
   margin-right: 2rem;
-  color: #fff;
+  color: var(--white);
   cursor: pointer;
 }
 #header .explore_best_div {
@@ -272,7 +291,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: #144e5a;
+  background-color: var(--primary);
 }
 @media screen and (max-width: 37.5rem) {
   #header .explore_best {
@@ -287,7 +306,7 @@ body {
 #header .explore_best .five {
   font-size: 1.5rem;
   margin-right: 2rem;
-  color: #fff;
+  color: var(--white);
 }
 #header .explore_best .explore_img {
   width: 15rem;
@@ -388,6 +407,224 @@ body {
 }
 #about .about_imgs .about_img_2 img:hover {
   transform: scale(1.1);
+}
+
+#discover {
+  overflow: hidden;
+  padding-bottom: 10rem;
+}
+#discover .section_title {
+  text-align: center;
+}
+#discover .swiperContainer {
+  margin: auto;
+  padding-top: 5rem;
+  padding-bottom: 10rem;
+  overflow-x: hidden;
+  max-width: 72rem;
+  border: 1.5rem solid transparent;
+}
+#discover .swiperContainer .swiper-wrapper .swiper_img {
+  width: 25rem;
+  height: 37rem;
+  position: relative;
+  overflow: hidden;
+}
+#discover .swiperContainer .swiper-wrapper .swiper_img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  cursor: pointer;
+  transition: transform 0.3s;
+}
+#discover .swiperContainer .swiper-wrapper .swiper_img img:hover {
+  transform: scale(1.1);
+}
+#discover .swiperContainer .swiper-wrapper .swiper_img .info {
+  position: absolute;
+  bottom: 2rem;
+  left: 2rem;
+}
+#discover .swiperContainer .swiper-wrapper .swiper_img .info .city {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: var(--white);
+}
+#discover .swiperContainer .swiper-wrapper .swiper_img .info .tours {
+  font-size: 1.4rem;
+  color: var(--white);
+}
+#discover .experience_info {
+  max-width: 50rem;
+  margin: 5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--primary);
+  padding: 0 1.5rem;
+}
+#discover .experience_info > div h5 {
+  color: inherit;
+  font-size: 2.5rem;
+}
+#discover .experience_info > div p {
+  color: inherit;
+  font-size: 1.5rem;
+}
+#discover .experience_imgs {
+  max-width: 60rem;
+  margin: 2rem auto;
+  position: relative;
+  padding: 0 1.5rem;
+}
+#discover .experience_imgs .experience_img_1 {
+  width: 80%;
+  height: 30rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 37.5rem) {
+  #discover .experience_imgs .experience_img_1 {
+    width: 60%;
+    height: 20rem;
+    margin-left: 10%;
+  }
+}
+#discover .experience_imgs .experience_img_1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+#discover .experience_imgs .experience_img_1 img:hover {
+  transform: scale(1.1);
+}
+#discover .experience_imgs .experience_img_2 {
+  position: absolute;
+  top: 5rem;
+  right: 0;
+  width: 40%;
+  height: 35rem;
+  overflow: hidden;
+}
+@media screen and (max-width: 37.5rem) {
+  #discover .experience_imgs .experience_img_2 {
+    width: 30%;
+    height: 22.5rem;
+    right: 15%;
+  }
+}
+#discover .experience_imgs .experience_img_2 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+}
+#discover .experience_imgs .experience_img_2 img:hover {
+  transform: scale(1.1);
+}
+#discover .video_tour {
+  padding: 20rem 1.5rem 5rem;
+  max-width: 72rem;
+  margin: 0 auto;
+}
+#discover .video_tour .para {
+  text-align: center;
+  margin-top: 1rem;
+}
+#discover .video_tour .video {
+  width: 100%;
+  height: 40rem;
+  margin-top: 5rem;
+  position: relative;
+}
+@media screen and (max-width: 37.5rem) {
+  #discover .video_tour .video {
+    height: 35rem;
+  }
+}
+@media screen and (max-width: 21.875rem) {
+  #discover .video_tour .video {
+    height: 30rem;
+  }
+}
+#discover .video_tour .video video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+#discover .video_tour .video_control {
+  cursor: pointer;
+  font-size: 3rem;
+  padding: 0.5rem 2rem;
+  color: var(--white);
+  background-color: var(--primary);
+  position: absolute;
+  bottom: -2rem;
+  right: 2rem;
+}
+
+#place {
+  max-width: 72rem;
+  margin: 0 auto;
+}
+#place .section_title {
+  text-align: center;
+}
+#place .places {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-gap: 2rem;
+  padding: 8rem 1.5rem;
+}
+#place .places .place_div {
+  height: 30rem;
+  position: relative;
+  color: var(--white);
+  overflow: hidden;
+  font-family: "Raleway", sans-serif;
+}
+#place .places .place_div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s;
+  cursor: pointer;
+}
+#place .places .place_div img:hover {
+  transform: scale(1.1);
+}
+#place .places .place_div .star {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  font-size: 1.5rem;
+  color: inherit;
+}
+#place .places .place_div .star i {
+  font-size: 1.5rem;
+  color: inherit;
+}
+#place .places .place_div .location {
+  position: absolute;
+  bottom: 5rem;
+  left: 2rem;
+  font-size: 2rem;
+}
+#place .places .place_div .location span {
+  display: block;
+  font-size: 1.2rem;
+}
+#place .places .place_div .place_btn {
+  position: absolute;
+  padding: 1rem 2rem;
+  border: none;
+  bottom: 0;
+  right: 0;
+  background-color: var(--primary);
+  cursor: pointer;
+}
+#place .places .place_div .place_btn:hover {
+  background-color: var(--primary-dark);
 }
 
 /*# sourceMappingURL=style.css.map */
