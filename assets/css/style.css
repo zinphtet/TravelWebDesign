@@ -26,6 +26,7 @@ html {
   line-height: 1.7;
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
+  scroll-behavior: smooth;
 }
 @media screen and (max-width: 75rem) {
   html {
@@ -60,15 +61,6 @@ html {
   background-color: var(--primary-dark);
 }
 
-#next {
-  height: 100vh;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 5rem;
-}
-
 .nav_brand_text {
   font-size: 3rem;
   color: var(--white);
@@ -87,6 +79,19 @@ html {
   font-size: 1.8rem;
   color: var(--primary_light_text);
   line-height: 1.2;
+}
+
+.footer_title {
+  font-family: "Raleway", sans-serif;
+  font-size: 2.5rem;
+  color: var(--primary);
+}
+
+.foot_link {
+  display: block;
+  color: var(--primary);
+  font-size: 1.7rem;
+  margin: 0.5rem 0;
 }
 
 body {
@@ -572,7 +577,7 @@ body {
 }
 #place .places {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
   grid-gap: 2rem;
   padding: 8rem 1.5rem;
 }
@@ -625,6 +630,109 @@ body {
 }
 #place .places .place_div .place_btn:hover {
   background-color: var(--primary-dark);
+}
+
+#subscribe {
+  margin: 5rem auto;
+  padding: 5rem 1.5rem;
+  background-color: var(--primary);
+}
+#subscribe .section_title {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--white);
+}
+#subscribe .para {
+  text-align: center;
+  margin-bottom: 5rem;
+  color: var(--white);
+}
+#subscribe .subscribe_form {
+  max-width: 50rem;
+  margin: 0 auto;
+  display: flex;
+  padding: 1rem;
+  background-color: var(--white);
+}
+#subscribe .subscribe_form .btn_primary {
+  padding: 1.5rem 3rem;
+}
+#subscribe .subscribe_form input {
+  padding: 1.5rem;
+  flex: 1;
+  border: none;
+  outline: none;
+}
+@media screen and (max-width: 21.875rem) {
+  #subscribe .subscribe_form input {
+    width: 50%;
+  }
+}
+#subscribe .subscribe_form input:focus {
+  outline: none;
+}
+
+#sponsor {
+  margin: 10rem auto;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-column-gap: 8rem;
+  grid-row-gap: 4rem;
+  justify-content: center;
+  justify-items: center;
+  align-items: center;
+}
+#sponsor .company {
+  height: 5rem;
+}
+#sponsor .company img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  filter: opacity(0.8);
+}
+
+#footer {
+  margin: auto;
+}
+#footer .footer_nav {
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(22rem, 1fr));
+  grid-gap: 5rem;
+}
+#footer .footer_nav > div .footer_title {
+  margin-bottom: 2rem;
+}
+#footer .footer_nav .gulliver .para {
+  margin-bottom: 2rem;
+  font-size: 1.5rem;
+}
+#footer .footer_nav .gulliver .footer_social i {
+  font-size: 2rem;
+  color: var(--primary);
+  cursor: pointer;
+}
+#footer .footer_nav .gulliver .footer_social i:not(:last-of-type) {
+  margin-right: 3rem;
+}
+#footer .copy_right {
+  text-align: center;
+  font-size: 1.5rem;
+  margin: 5rem 2rem 2rem;
+}
+
+.to_home_btn {
+  padding: 0.3rem 1.2rem;
+  background-color: var(--primary);
+  color: var(--white);
+  font-size: 3rem;
+  position: fixed;
+  bottom: 5rem;
+  right: 2rem;
+  display: none;
+  cursor: pointer;
 }
 
 /*# sourceMappingURL=style.css.map */

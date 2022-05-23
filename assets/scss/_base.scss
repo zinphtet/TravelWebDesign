@@ -49,7 +49,7 @@ html{
     line-height: 1.7;
     font-family: 'Open Sans', sans-serif;
     overflow-x: hidden;
-
+    scroll-behavior: smooth;
     @media screen and (max-width : $tablet-land){
         font-size: 56.25%;
     }
@@ -80,11 +80,3 @@ html{
 
 
 
-#next{
-    height: 100vh;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 5rem;
-}

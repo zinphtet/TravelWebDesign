@@ -56,3 +56,13 @@ videoControlBtn.addEventListener('click', function () {
 video.addEventListener('ended', function () {
 	videoControlBtn.classList = 'video_control ri-play-line';
 });
+
+// to home button display
+const toHome = selectDom('.to_home_btn');
+window.addEventListener('scroll', function () {
+	if (this.scrollY > 300) {
+		toHome.style.display = 'block';
+	} else {
+		toHome.style.display = 'none';
+	}
+});
