@@ -5,6 +5,18 @@
   --white: #fff;
   --black: #100e0e;
   --gray: #615757;
+  --header-white: #fff;
+  --header-primary: #144e5a;
+  --btn-primary-dark: #0f3c46;
+}
+
+body.dark {
+  --primary: #fff;
+  --primary-dark: #e4e2e2;
+  --primary_light_text: #c6c5c5;
+  --white: #000000;
+  --black: #fdfbfb;
+  --gray: #615757;
 }
 
 * {
@@ -27,6 +39,7 @@ html {
   font-family: "Open Sans", sans-serif;
   overflow-x: hidden;
   scroll-behavior: smooth;
+  scroll-margin: 5rem;
 }
 @media screen and (max-width: 75rem) {
   html {
@@ -44,6 +57,10 @@ html {
   }
 }
 
+body {
+  background-color: var(--white);
+}
+
 .container {
   max-width: 110rem;
 }
@@ -51,19 +68,19 @@ html {
 .btn_primary {
   padding: 2rem 4rem;
   border: none;
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--header-primary);
+  color: var(--header-white);
   font-size: 1.5rem;
   cursor: pointer;
   transition: background-color 0.3s;
 }
 .btn_primary:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--btn-primary-dark);
 }
 
 .nav_brand_text {
   font-size: 3rem;
-  color: var(--white);
+  color: var(--header-white);
   font-weight: 400;
 }
 
@@ -89,14 +106,14 @@ html {
 
 .foot_link {
   display: block;
-  color: var(--primary);
+  color: var(--primary_light_text);
   font-size: 1.7rem;
   margin: 0.5rem 0;
 }
 
 body {
   position: relative;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 
 #header {
@@ -105,7 +122,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  overflow-x: hidden;
+  overflow: hidden;
 }
 #header nav {
   height: 10vh;
@@ -126,7 +143,7 @@ body {
   #header nav .inner_nav .square_icon {
     display: block;
     font-size: 3rem;
-    color: var(--white);
+    color: var(--header-white);
   }
 }
 #header nav .inner_nav .nav_brand {
@@ -163,7 +180,7 @@ body {
   font-size: 2rem;
   margin: 1rem 3rem;
   border: 2px solid transparent;
-  color: var(--white);
+  color: var(--header-white);
 }
 @media screen and (max-width: 56.25rem) {
   #header nav .inner_nav .nav_links .nav_link {
@@ -173,7 +190,7 @@ body {
   }
 }
 #header nav .inner_nav .nav_links .nav_link:hover {
-  border-bottom: 2px solid var(--white);
+  border-bottom: 2px solid currentColor;
 }
 @media screen and (max-width: 56.25rem) {
   #header nav .inner_nav .nav_links .nav_link:hover {
@@ -197,7 +214,7 @@ body {
 #header nav .inner_nav .nav_links .light_dark i {
   font-size: 2rem;
   cursor: pointer;
-  color: var(--white);
+  color: var(--header-white);
 }
 @media screen and (max-width: 56.25rem) {
   #header nav .inner_nav .nav_links .light_dark i {
@@ -253,13 +270,13 @@ body {
 #header .explore .discover {
   font-size: 2rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--header-white);
 }
 #header .explore_title {
   font-size: 6rem;
   line-height: 1.1;
   margin-bottom: 5rem;
-  color: var(--white);
+  color: var(--header-white);
 }
 @media screen and (max-width: 21.875rem) {
   #header .explore_title {
@@ -281,7 +298,7 @@ body {
 }
 #header .explore .social i {
   margin-right: 2rem;
-  color: var(--white);
+  color: var(--header-white);
   cursor: pointer;
 }
 #header .explore_best_div {
@@ -296,7 +313,7 @@ body {
   align-items: center;
   justify-content: center;
   padding: 2rem;
-  background-color: var(--primary);
+  background-color: var(--header-primary);
 }
 @media screen and (max-width: 37.5rem) {
   #header .explore_best {
@@ -311,7 +328,7 @@ body {
 #header .explore_best .five {
   font-size: 1.5rem;
   margin-right: 2rem;
-  color: var(--white);
+  color: var(--header-white);
 }
 #header .explore_best .explore_img {
   width: 15rem;
@@ -453,11 +470,11 @@ body {
 #discover .swiperContainer .swiper-wrapper .swiper_img .info .city {
   font-size: 2.5rem;
   font-weight: 600;
-  color: var(--white);
+  color: var(--header-white);
 }
 #discover .swiperContainer .swiper-wrapper .swiper_img .info .tours {
   font-size: 1.4rem;
-  color: var(--white);
+  color: var(--header-white);
 }
 #discover .experience_info {
   max-width: 50rem;
@@ -561,8 +578,8 @@ body {
   cursor: pointer;
   font-size: 3rem;
   padding: 0.5rem 2rem;
-  color: var(--white);
-  background-color: var(--primary);
+  color: var(--header-white);
+  background-color: var(--header-primary);
   position: absolute;
   bottom: -2rem;
   right: 2rem;
@@ -584,7 +601,7 @@ body {
 #place .places .place_div {
   height: 30rem;
   position: relative;
-  color: var(--white);
+  color: var(--header-white);
   overflow: hidden;
   font-family: "Raleway", sans-serif;
 }
@@ -625,34 +642,35 @@ body {
   border: none;
   bottom: 0;
   right: 0;
-  background-color: var(--primary);
+  background-color: var(--header-primary);
+  color: var(--header-white);
   cursor: pointer;
 }
 #place .places .place_div .place_btn:hover {
-  background-color: var(--primary-dark);
+  background-color: var(--btn-primary-dark);
 }
 
 #subscribe {
   margin: 5rem auto;
   padding: 5rem 1.5rem;
-  background-color: var(--primary);
+  background-color: var(--header-primary);
 }
 #subscribe .section_title {
   text-align: center;
   margin-bottom: 5rem;
-  color: var(--white);
+  color: var(--header-white);
 }
 #subscribe .para {
   text-align: center;
   margin-bottom: 5rem;
-  color: var(--white);
+  color: var(--primary_light_text);
 }
 #subscribe .subscribe_form {
   max-width: 50rem;
   margin: 0 auto;
   display: flex;
   padding: 1rem;
-  background-color: var(--white);
+  background-color: var(--header-white);
 }
 #subscribe .subscribe_form .btn_primary {
   padding: 1.5rem 3rem;
@@ -706,6 +724,7 @@ body {
   margin-bottom: 2rem;
 }
 #footer .footer_nav .gulliver .para {
+  color: var(--primary_light_text);
   margin-bottom: 2rem;
   font-size: 1.5rem;
 }
@@ -721,12 +740,13 @@ body {
   text-align: center;
   font-size: 1.5rem;
   margin: 5rem 2rem 2rem;
+  color: var(--black);
 }
 
 .to_home_btn {
   padding: 0.3rem 1.2rem;
-  background-color: var(--primary);
-  color: var(--white);
+  background-color: var(--header-primary);
+  color: var(--header-white);
   font-size: 3rem;
   position: fixed;
   bottom: 5rem;
