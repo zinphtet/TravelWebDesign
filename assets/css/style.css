@@ -362,14 +362,21 @@ body {
     flex-direction: column;
   }
   #about .about_info {
-    text-align: center;
     margin-bottom: 5rem;
+    text-align: center;
+  }
+  #about .about_info .section_title {
+    text-align: center;
+  }
+  #about .about_info .para {
+    text-align: center;
+    padding-left: 5rem;
   }
 }
 #about > div {
   flex: 1;
 }
-#about .about_info {
+#about .about_info .para {
   padding-right: 5rem;
 }
 #about .about_info > * {
