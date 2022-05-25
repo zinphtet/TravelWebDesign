@@ -84,6 +84,7 @@ modeIcon.addEventListener('click', function () {
 		this.className = 'ri-sun-line';
 		modeText.textContent = 'Light Mode';
 		body.classList.add('dark');
+
 		companyImgs.forEach((img) => {
 			img.style.filter = 'invert(100%)';
 		});
@@ -97,10 +98,12 @@ modeIcon.addEventListener('click', function () {
 		img.style.filter = 'none';
 	});
 });
+//
 
 //Animate On Scroll
 
 AOS.init({
 	duration: 1200,
 	once: true,
+	offset: -50,
 });
