@@ -41,6 +41,9 @@ html {
   scroll-behavior: smooth;
   scroll-margin: 5rem;
 }
+::-webkit-scrollbar{
+  width: 0;
+}
 @media screen and (max-width: 75rem) {
   html {
     font-size: 56.25%;
